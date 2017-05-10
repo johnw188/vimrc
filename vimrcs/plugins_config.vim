@@ -4,6 +4,21 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""
+" => Load vundle
+""""""""""""""""""""""""""""""
+set runtimepath+=~/.dotfiles/vim/vimrc/bundle/Vundle.vim
+" Turn filetype off here so we can reenable after vundle sets up runtime paths
+filetype off
+
+call vundle#begin('~/.dotfiles/vim/vimrc/bundle')
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+call vundle#end()
+
+filetype plugin indent on
+
 
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
